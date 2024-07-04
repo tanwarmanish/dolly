@@ -1,30 +1,54 @@
-#source div {
-    min-height: 200px;
-    border: 5px solid red;
-    background-color: grey;
-    width: 400px;
+#source .container {
+  display: flex;
+  justify-content: center;
 }
-#source h1 {
-    font-size: 40px;
-    color: white;
-    text-align: center;
+#source .content {
+  background-color: antiquewhite;
+  max-width: 1200px;
+  border: 5px solid teal;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-#source span {
-    padding: 20px;
-    border: 1px solid red;
-    display: block;
-    text-align: center;
-    margin: 20px;
+#source .title {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
-#source p {
-    font-size: 20px;
-    color: WHITE;
+#source .subtitle {
+  font-size: 16px;
 }
-#source button {
-    width: 200px;
-    height: 80px;
-    font-size: 30px;
-    border-radius: 50px;
-    border: none;
-    color: red;
+
+#source .pills {
+  margin-top: 30px;
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#source .pill {
+  border: 1px solid black;
+  height: 150px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#source .pill.red {
+  background-color: tomato;
+  color: white;
+}
+#source .pill.blue {
+  background-color: teal;
+  color: white;
+}
+#source .pill h1 {
+  font-size: 20px;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+}
+#source .pill span {
+  font-size: 8px;
+  text-transform: lowercase;
 }
