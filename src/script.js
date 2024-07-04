@@ -1,5 +1,6 @@
 let classes = {};
 let classString = "";
+console.log("SCRIPT LOADED"); 
 
 function $(selector, root = document) {
   return root.querySelector(selector);
