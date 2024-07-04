@@ -98,7 +98,7 @@ function processStyle(source, classRef = classes) {
 
 function generateTemplate(source) {
   const htmlString = source.innerHTML;
-  return `<style>${classString}</style>${htmlString}`;
+  return `<!DOCTYPE html><html><head><style>${classString}</style></head><body>${htmlString}</body></html>`;
 }
 
 // main
@@ -109,4 +109,12 @@ function run() {
   clone(source, target);
   processStyle(target);
   console.log({ template: generateTemplate(target) });
+}
+
+
+function include(){
+  var se = document.createElement('script');
+  se.setAttribute('type', 'text/javascript');
+  se.src = "https://cdn.jsdelivr.net/gh/tanwarmanish/dolly/src/script.js"
+  document.getElementsByTagName('head').item(0).appendChild(se); 
 }
